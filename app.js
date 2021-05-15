@@ -1,7 +1,3 @@
-const fs = require("fs")
-const { linkSync } = require("node:fs")
+const chalk = require('chalk');
 
-// fs.writeFileSync("notes.txt", "This is first note.")
-
-fs.appendFileSync("notes.txt", " This is second note.")
-
+console.log(chalk.green.bold.inverse('Success!'));
